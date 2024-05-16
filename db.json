@@ -41,6 +41,60 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Peacock Plant",
+      "image": "https://cdn.webshopapp.com/shops/30495/files/447590369/calathea-orbifolia-calathea-orbifolia-peacock-plan.jpg",
+      "price": 40,
+      "id": 8
+    },
+    {
+      "name": "Calathea Rattlesnake",
+      "image": "https://www.1800flowers.com/blog/wp-content/uploads/2022/12/calathea-rattlesnake-hero-1024x576.jpg.webp",
+      "price": 39,
+      "id": 9
+    },
+    {
+      "name": "Anotha one",
+      "image": "https://www.1800flowers.com/blog/wp-content/uploads/2022/12/calathea-rattlesnake-hero-1024x576.jpg.webp",
+      "price": 32,
+      "id": 10
+    },
+    {
+      "name": "Anotha one",
+      "image": "https://www.1800flowers.com/blog/wp-content/uploads/2022/12/calathea-rattlesnake-hero-1024x576.jpg.webp",
+      "price": 15,
+      "id": 11
+    },
+    {
+      "name": "Calathea Zebrina",
+      "image": "https://i.etsystatic.com/21427386/r/il/0c5054/2393203093/il_570xN.2393203093_cxdp.jpg",
+      "price": 15,
+      "id": 12
+    },
+    {
+      "name": "Calathea Maranta",
+      "image": "https://fantasticgardensofli.com/cdn/shop/products/onlinestorepicsize_94.png?v=1663778471&width=1946",
+      "price": 5,
+      "id": 13
+    },
+    {
+      "name": "Calathea",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/calathea-plant-calathea-warscewiczii-1644354259.jpg",
+      "price": "32.99",
+      "id": 14
+    },
+    {
+      "name": "Calathea",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/calathea-plant-calathea-warscewiczii-1644354259.jpg",
+      "price": 32,
+      "id": 15
+    },
+    {
+      "name": "Calathea",
+      "image": "https://hips.hearstapps.com/hmg-prod/images/calathea-plant-calathea-warscewiczii-1644354259.jpg",
+      "price": 100.99,
+      "id": 16
     }
   ]
 }
