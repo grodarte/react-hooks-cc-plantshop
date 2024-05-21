@@ -1,9 +1,28 @@
 import React from "react";
 import { useState } from "react";
 
-function PlantCard( {plant} ) {
+function PlantCard( {plant, onDeletePlant, onUpdatePlant} ) {
   const {id, name, image, price} = plant
   const [inStock, setInStock] = useState(true)
+
+  function handleUpdatePrice(plant){
+    const newPrice = prompt("Enter the new price:")
+    const updatedPlant = {
+      ...plant,
+      ["price"]: parseFloat(newPrice)
+    }
+
+    fetch(`http://localhost:6001/plants/${plant.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: JSON.stringify(updatedPlant)
+    })
+    .then(r=>r.json())
+    .then(plantData=> onUpdatePlant(plantData))
+  }
 
   return (
     <li className="card" data-testid="plant-item">
@@ -15,6 +34,9 @@ function PlantCard( {plant} ) {
       ) : (
         <button onClick={()=>{setInStock(true)}}>Out of Stock</button>
       )}
+      <button onClick={()=>{onDeletePlant(plant)}}>Delete</button>
+      <button onClick={()=>{handleUpdatePrice(plant)}}>Update Price</button>
+
     </li>
   );
 }
