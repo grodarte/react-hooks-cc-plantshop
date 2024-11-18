@@ -57,26 +57,8 @@
     {
       "name": "Calathea",
       "image": "https://abeautifulmess.com/wp-content/uploads/2023/10/calathea-plant-how-to-grow-care-for-.jpg",
-      "price": 14,
-      "id": 10
-    },
-    {
-      "name": "Calathea",
-      "image": "https://abeautifulmess.com/wp-content/uploads/2023/10/calathea-plant-how-to-grow-care-for-.jpg",
-      "price": 15,
-      "id": 11
-    },
-    {
-      "name": "Calathea",
-      "image": "https://abeautifulmess.com/wp-content/uploads/2023/10/calathea-plant-how-to-grow-care-for-.jpg",
-      "price": 16,
-      "id": 12
-    },
-    {
-      "name": "Calathea",
-      "image": "https://abeautifulmess.com/wp-content/uploads/2023/10/calathea-plant-how-to-grow-care-for-.jpg",
-      "price": 17,
-      "id": 13
+      "price": "11.11",
+      "id": 14
     }
   ]
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import PlantCard from "./PlantCard";
 
-function PlantList({ plants }) {
-  const plantElements = plants.map(plant=><PlantCard key={plant.id} plant={plant}/>)
+function PlantList({ plants, onDeletePlant }) {
+  const plantElements = plants.map(plant=><PlantCard key={plant.id} plant={plant} onDeletePlant={onDeletePlant}/>)
 
   return (
     <ul className="cards">{plantElements}</ul>
