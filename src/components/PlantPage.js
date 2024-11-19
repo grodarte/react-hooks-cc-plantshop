@@ -21,17 +21,15 @@ function PlantPage() {
   }
 
   function handleUpdatePlant(updatedPlant){
-    console.log(updatedPlant)
+    const newPlantArr = plants.map(plant=>{
+      if(plant.id === updatedPlant.id){
+        return updatedPlant
+      } else {
+        return plant
+      }
+    })
 
-    // const newPlantArr = plants.map(plant=>{
-    //   if(plant.id === updatedPlant.id){
-    //     return updatedPlant
-    //   } else {
-    //     return plant
-    //   }
-    // })
-
-    // setPlants(newPlantArr)
+    setPlants(newPlantArr)
   }
 
   function handleSearch(e){
@@ -50,7 +48,7 @@ function PlantPage() {
     <main>
       <NewPlantForm onNewPlant={handleNewPlant}/>
       <Search search={search} onSearch={handleSearch}/>
-      <PlantList plants={displayPlants} onDeletePlant={handleDeletePlant}/>
+      <PlantList plants={displayPlants} onDeletePlant={handleDeletePlant} onUpdatePlant={handleUpdatePlant}/>
     </main>
   );
 }
